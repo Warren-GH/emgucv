@@ -492,7 +492,7 @@ namespace Emgu.CV
          UMat[] mats = new UMat[NumberOfChannels];
          for (int i = 0; i < mats.Length; i++)
          {
-            mats[i] = new UMat(Rows, Cols, Depth, NumberOfChannels);
+            mats[i] = new UMat(Rows, Cols, Depth, 1);
          }
          using (VectorOfUMat vm = new VectorOfUMat(mats))
          {
